@@ -62,6 +62,7 @@ service EchoService {
       additional_bindings {get: "/v1/example/echo/{id}/{num}/{lang}"}
       additional_bindings {get: "/v1/example/echo1/{id}/{line_num}/{status.note}"}
       additional_bindings {get: "/v1/example/echo2/{no.note}"}
+      additional_bindings {get: "/v1/example/echo/resource/{resource_id}"}
     };
   }
   // EchoBody method receives a simple message and returns it.
